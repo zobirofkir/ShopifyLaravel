@@ -19,7 +19,7 @@ class ShopifyServiceProvider extends ServiceProvider
         $this->app->singleton(Rest::class, function ($app) {
             return new Rest(
                 env('SHOPIFY_SHOP_DOMAIN'), 
-                env('SHOPIFY_ACCESS_TOKEN') // Add the access token here
+                env('SHOPIFY_ACCESS_TOKEN') 
             );
         });
     }
